@@ -1,95 +1,161 @@
+To apply the same visual style from your Airbnb-like apartment website to your laboratory website, you can integrate the provided CSS into the HTML document I created for you. Here’s how you can do it:
+
+1. **Add the CSS to the `<head>` of your HTML document.**
+2. **Ensure your HTML elements use the classes and styling specified in the CSS.**
+
+Here is the updated HTML document with the CSS applied:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yura Yura News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77a4d1 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .content {
+            padding: 20px;
+            background: #fff;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .map-container {
+            margin-top: 20px;
+        }
+        video {
+            width: 60%;
+            height: auto;            
+            margin: 20px auto; /* Center align video */
+            display: block; /* Ensure block display for margin to work */
+        }
+        .link-center {
+            display: block;
+            text-align: center;
+            color: #003366; /* Marine blue color */
+            text-decoration: none;
+            margin: 10px 0; /* Add some space around the links */
+        }
+        .link-center:hover {
+            color: #003366; /* Keep marine blue color on hover */
+            text-decoration: underline; /* Optionally underline on hover */
+        }
+        img {
+            max-width: 50%;
+            height: auto;
+            margin: 20px auto; /* Center align image */
+            display: block; /* Ensure block display for margin to work */
+        }
+    </style>
 </head>
 <body>
-    <h1>Yura Yura News</h1>
+    <header>
+        <div class="container">
+            <h1>Yura Yura News</h1>
+        </div>
+    </header>
 
-    <h2>January 31, 2023</h2>
-    <p>Just came back from a great research trip to Germany. Thanks again to all the students who did not mind me doing two classes on Zoom instead of face-to-face. Looking forward to continuing and further expanding our great collaboration in Dresden and co.</p>
+    <div class="container">
+        <div class="content">
+            <h2>January 31, 2023</h2>
+            <p>Just came back from a great research trip to Germany. Thanks again to all the students who did not mind me doing two classes on Zoom instead of face-to-face. Looking forward to continuing and further expanding our great collaboration in Dresden and co.</p>
 
-    <h2>January 4, 2023</h2>
-    <p>This got a bit late, but congratulations Daichi on your nice practical overview on how to use our Rheo-NMR approach for general biomolecular studies!</p>
+            <h2>January 4, 2023</h2>
+            <p>This got a bit late, but congratulations Daichi on your nice practical overview on how to use our Rheo-NMR approach for general biomolecular studies!</p>
 
-    <h2>June 28, 2022</h2>
-    <p>Long time no updates! But finally, something to write here! Yes, yes - good news!</p>
-    <p>Our collaborative paper with Dr. Scheler and Benjamin from Dresden was accepted. Look forward to the details soon.</p>
-    <p>The journey that culminated in this paper started with a simple observation of our Ph.D. student Naoto several years ago. Naoto observed something peculiar in his aggregation experiments on superoxide dismutase 1.</p>
-    <p>You might just have discarded his observations as "poor reproducibility" or "poor handling of the sample". But no! Naoto was sure that something with the experimental setup had triggered faster protein aggregation in some cases than in other cases.</p>
-    <p>About five years, a lot of experiments, simulations, and literature study later, we finally began to understand what happened. Anyway, detailed report to follow soon after publication is finalized!</p>
-    <p><strong>Flow profile affects the physical properties and behavior of proteins immersed in the solution. In this study, we looked at flow profiles approaching the shape shown in the picture. ;)</strong></p>
+            <h2>June 28, 2022</h2>
+            <p>Long time no updates! But finally, something to write here! Yes, yes - good news!</p>
+            <p>Our collaborative paper with Dr. Scheler and Benjamin from Dresden was accepted. Look forward to the details soon.</p>
+            <p>The journey that culminated in this paper started with a simple observation of our Ph.D. student Naoto several years ago. Naoto observed something peculiar in his aggregation experiments on superoxide dismutase 1.</p>
+            <p>You might just have discarded his observations as "poor reproducibility" or "poor handling of the sample". But no! Naoto was sure that something with the experimental setup had triggered faster protein aggregation in some cases than in other cases.</p>
+            <p>About five years, a lot of experiments, simulations, and literature study later, we finally began to understand what happened. Anyway, detailed report to follow soon after publication is finalized!</p>
+            <p><strong>Flow profile affects the physical properties and behavior of proteins immersed in the solution. In this study, we looked at flow profiles approaching the shape shown in the picture. ;)</strong></p>
 
-    <h2>March 14, 2022</h2>
-    <p><em>Aquila non muscas captat.</em></p>
-    <p>Do not let the scarceness of news on this Sway fool you. We are working on exciting projects and have a couple of studies in the pipeline. :)</p>
+            <h2>March 14, 2022</h2>
+            <p><em>Aquila non muscas captat.</em></p>
+            <p>Do not let the scarceness of news on this Sway fool you. We are working on exciting projects and have a couple of studies in the pipeline. :)</p>
 
-    <h2>August 2, 2021</h2>
-    <p><strong>Mayu's summary of our view of non-specific ATP-ATP and ATP-proteins in the vicinity of protein surfaces.</strong></p>
-    <p>Mayu's paper on non-specific binding of ATP to proteins and its implications on protein-protein association was published in JACS. Congratulations Mayu!</p>
+            <h2>August 2, 2021</h2>
+            <p><strong>Mayu's summary of our view of non-specific ATP-ATP and ATP-proteins in the vicinity of protein surfaces.</strong></p>
+            <p>Mayu's paper on non-specific binding of ATP to proteins and its implications on protein-protein association was published in JACS. Congratulations Mayu!</p>
 
-    <h2>July 12, 2021</h2>
-    <p>Naoto's Rheo-NMR paper on folded and unfolded SOD1 was published in JACS. Grand applause and congratulations!</p>
+            <h2>July 12, 2021</h2>
+            <p>Naoto's Rheo-NMR paper on folded and unfolded SOD1 was published in JACS. Grand applause and congratulations!</p>
 
-    <h2>June 12, 2021</h2>
-    <p>Congratulations Tomoki! A nice paper showing how cyclic K48-linked diubiquitin (that means: both C-termini are linked to a K48-NH3+ group on the other ubiquitin molecule) behaves physicochemically with some interesting implications on real-life cells! BBRC.</p>
+            <h2>June 12, 2021</h2>
+            <p>Congratulations Tomoki! A nice paper showing how cyclic K48-linked diubiquitin (that means: both C-termini are linked to a K48-NH3+ group on the other ubiquitin molecule) behaves physicochemically with some interesting implications on real-life cells! BBRC.</p>
 
-    <h2>March 4, 2021</h2>
-    <p>Congratulations Naoto on your nice paper showing how the presence of non-specific interactions with lysozyme dramatically affects the aggregation of ALS-associated protein superoxide dismutase 1. Journal of Physical Chemistry B.</p>
+            <h2>March 4, 2021</h2>
+            <p>Congratulations Naoto on your nice paper showing how the presence of non-specific interactions with lysozyme dramatically affects the aggregation of ALS-associated protein superoxide dismutase 1. Journal of Physical Chemistry B.</p>
 
-    <h2>February 23, 2021</h2>
-    <p><strong>Even simple K48-linked diubiquitin (diUb) shows interesting motions:</strong> not only a symmetric closed-to-open transition, but also an asymmetric jiggling of the structure. Interestingly, these distinct kinds of dynamic motion influence the molecule's susceptibility to modification by the ubiquitin-kinase PINK1. In Biochemistry.</p>
+            <h2>February 23, 2021</h2>
+            <p><strong>Even simple K48-linked diubiquitin (diUb) shows interesting motions:</strong> not only a symmetric closed-to-open transition, but also an asymmetric jiggling of the structure. Interestingly, these distinct kinds of dynamic motion influence the molecule's susceptibility to modification by the ubiquitin-kinase PINK1. In Biochemistry.</p>
 
-    <h2>December 18, 2020</h2>
-    <p>A quick excurse into the world of DNA, epigenetics, and the dynamic flip-out of bases.</p>
-    <p><a href="https://www.kyoto-u.ac.jp" target="_blank">Kyoto University homepage</a> - in Japanese.</p>
+            <h2>December 18, 2020</h2>
+            <p>A quick excurse into the world of DNA, epigenetics, and the dynamic flip-out of bases.</p>
+            <p><a href="https://www.kyoto-u.ac.jp" target="_blank" class="link-center">Kyoto University homepage</a> - in Japanese.</p>
 
-    <h2>What is biomolecular dynamics?</h2>
-    <p>Hey look! This protein is moving along another protein! That's kind of interesting. Why does it do that? Does the molecule have a purpose? But it's just a molecule, composed of atoms and governed by the rules of the tiny world of quantum mechanics. Why does it have a goal and knows where to walk ... ?</p>
-    <p>We enjoy researching things like these: not just static structures of proteins, but the dynamic aspects of protein structure ...</p>
+            <h2>What is biomolecular dynamics?</h2>
+            <p>Hey look! This protein is moving along another protein! That's kind of interesting. Why does it do that? Does the molecule have a purpose? But it's just a molecule, composed of atoms and governed by the rules of the tiny world of quantum mechanics. Why does it have a goal and knows where to walk ... ?</p>
+            <p>We enjoy researching things like these: not just static structures of proteins, but the dynamic aspects of protein structure ...</p>
 
-    <h3>We enjoy thinking about the dynamic aspects of molecular structure ...</h3>
-    <h3>... and what these fluctuations imply for physiology.</h3>
-    <h3>Flows, crowding, and even normal "Brownian" motion at 310 K gives life highly dynamic aspects that cannot be understood by static snapshot structures.</h3>
+            <h3>We enjoy thinking about the dynamic aspects of molecular structure ...</h3>
+            <h3>... and what these fluctuations imply for physiology.</h3>
+            <h3>Flows, crowding, and even normal "Brownian" motion at 310 K gives life highly dynamic aspects that cannot be understood by static snapshot structures.</h3>
 
-    <p>All of this could be summarized in the question: how does life and its processes change with time (d/dt)?</p>
-    <p>Lewis Kay and Reid Alderson have recently written a nice review in Cell which summarizes our scientific field (what do we mean by biomolecular dynamics?) very nicely. Please check Fig. 6 of their review for a visual impact, I will just state the main points here:</p>
+            <p>All of this could be summarized in the question: how does life and its processes change with time (d/dt)?</p>
+            <p>Lewis Kay and Reid Alderson have recently written a nice review in Cell which summarizes our scientific field (what do we mean by biomolecular dynamics?) very nicely. Please check Fig. 6 of their review for a visual impact, I will just state the main points here:</p>
 
-    <h3>Examples of biomolecular dynamics</h3>
-    <ul>
-        <li>Ligand binding (small molecules or macromolecules)</li>
-        <li>Allosteric interactions</li>
-        <li>Determination of molecular structures (proteins, DNA, RNA, etc.)</li>
-        <li>Folding</li>
-        <li>Detection of low-population "minor" (= almost "invisible" states)</li>
-        <li>Mechanisms (e.g. enzymatic reactions, amyloid fibril formation, ...)</li>
-        <li>Dynamic motions (domain motions, local motions, smaller fluctuations, ...; e.g. flip-out of bases of DNA etc.)</li>
-        <li>Biochemistry of unstructured regions: domain linkers and intrinsically disordered proteins</li>
-        <li>Weak, transient, non-specific interactions</li>
-    </ul>
+            <h3>Examples of biomolecular dynamics</h3>
+            <ul>
+                <li>Ligand binding (small molecules or macromolecules)</li>
+                <li>Allosteric interactions</li>
+                <li>Determination of molecular structures (proteins, DNA, RNA, etc.)</li>
+                <li>Folding</li>
+                <li>Detection of low-population "minor" (= almost "invisible" states)</li>
+                <li>Mechanisms (e.g. enzymatic reactions, amyloid fibril formation, ...)</li>
+                <li>Dynamic motions (domain motions, local motions, smaller fluctuations, ...; e.g. flip-out of bases of DNA etc.)</li>
+                <li>Biochemistry of unstructured regions: domain linkers and intrinsically disordered proteins</li>
+                <li>Weak, transient, non-specific interactions</li>
+            </ul>
 
-    <p>Also these two points are emphasized:</p>
-    <ol>
-        <li>Molecular sample conditions: near physiological in vitro (e.g. pH 7.4, intracellular ionic strength, reducing conditions, temperature) or even measurements in living cells</li>
-        <li>We can monitor molecular processes in real time while they take place (over seconds, minutes, hours, days).</li>
-    </ol>
-
-    <h2>Research interest #1: Dynamic ubiquitin</h2>
-    <p>Ubiquitin is a small protein, only 76 amino acids long. But it can be linked to another ubiquitin at 8 different points and these ubiquitin "chains" can become quite long and complex. Interestingly, inside cells different types of chains often have different meaning and are interpreted differently by the cellular machinery. For example, a ubiquitin chain linked at residue lysine 48 ("K48-chain") to the C-terminus of the next ubiquitin signals the cell that the protein connected to this ubiquitin chain should be degraded by the proteasome. Other ubiquitin chains also have different (non-proteolytic) functions.</p>
-    <p>The K48 chain's simplest form: a K48-linked ubiquitin dimer is the most thoroughly studied example. Interestingly, even this simple dimer has intriguing dynamics such as a transition from a closed to an open conformation in solution. Interacting proteins that read out the ubiquitin-encoded signal bind the open form, not the closed one.</p>
-
-    <h3>Collaborators: Kazuhiro Iwai, Daichi Morimoto.</h3>
-
-    <h3>Selected publications</h3>
-    <ul>
-        <li>Structural Dynamic Heterogeneity of Polyubiquitin Subunits Affects Phosphorylation Susceptibility<br>
-        Morimoto, D. & Walinda, E., Takashima, S., Nishizawa, M., Iwai, K., Shirakawa, M., and Sugase, K.<br>
-        Biochemistry, 2021, 60(8), 573-583<br>
-        <a href="https://doi.org/10.1021/acs.biochem.0c00619" target="_blank">doi.org/10.1021/acs.biochem.0c00619</a></li>
-
-        <li>Dual Function of Phosphoubiquitin in E3 Activation of Parkin.<br>
-        Walinda, E., Morimoto, D., Sugase, K., and Shirakawa, M.<br>
-        J. Biol. Chem., 2016, 291, 16879-16891.<br>
-        <a href="https://doi.org/10.1074
+            <p>Also these two points are emphasized:</p>
+            <ol>
+                <li>Molecular
