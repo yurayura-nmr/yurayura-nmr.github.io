@@ -5,23 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Labs</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2b2b2b;
+            text-align: center;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         th, td {
-            padding: 8px;
+            padding: 12px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
         th {
+            background-color: #4CAF50;
+            color: white;
             cursor: pointer;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        tr td {
+            border-left: 4px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        tr:hover td {
+            border-left-color: #4CAF50;
         }
     </style>
 </head>
 <body>
 
-<h1>Research Labs</h1>
+<h1>Research Labs Around the World</h1>
 
 <table id="researchTable">
     <thead>
@@ -56,6 +84,81 @@
             <td>France</td>
             <td>Pasteur Institute</td>
             <td>Microbiology</td>
+        </tr>
+        <tr>
+            <td>Canada</td>
+            <td>University of Toronto</td>
+            <td>Genetics</td>
+        </tr>
+        <tr>
+            <td>Switzerland</td>
+            <td>ETH Zurich</td>
+            <td>Nanotechnology</td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>University of Melbourne</td>
+            <td>Ecology</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>Tsinghua University</td>
+            <td>Quantum Physics</td>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>Indian Institute of Science</td>
+            <td>Biotechnology</td>
+        </tr>
+        <tr>
+            <td>Brazil</td>
+            <td>Universidade de São Paulo</td>
+            <td>Agricultural Science</td>
+        </tr>
+        <tr>
+            <td>Sweden</td>
+            <td>Karolinska Institute</td>
+            <td>Medicine</td>
+        </tr>
+        <tr>
+            <td>South Korea</td>
+            <td>Seoul National University</td>
+            <td>Materials Science</td>
+        </tr>
+        <tr>
+            <td>Netherlands</td>
+            <td>Delft University of Technology</td>
+            <td>Chemical Engineering</td>
+        </tr>
+        <tr>
+            <td>Russia</td>
+            <td>Moscow State University</td>
+            <td>Theoretical Physics</td>
+        </tr>
+        <tr>
+            <td>Israel</td>
+            <td>Weizmann Institute of Science</td>
+            <td>Immunology</td>
+        </tr>
+        <tr>
+            <td>Italy</td>
+            <td>University of Bologna</td>
+            <td>Archaeology</td>
+        </tr>
+        <tr>
+            <td>Denmark</td>
+            <td>University of Copenhagen</td>
+            <td>Climate Science</td>
+        </tr>
+        <tr>
+            <td>South Africa</td>
+            <td>University of Cape Town</td>
+            <td>Paleontology</td>
+        </tr>
+        <tr>
+            <td>Mexico</td>
+            <td>UNAM</td>
+            <td>Astrophysics</td>
         </tr>
     </tbody>
 </table>
