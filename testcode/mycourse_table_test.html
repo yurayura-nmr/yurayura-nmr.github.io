@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Labs</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Research Labs</h1>
+
+<table id="researchTable">
+    <thead>
+        <tr>
+            <th onclick="sortTable(0)">Country</th>
+            <th onclick="sortTable(1)">Research Lab</th>
+            <th onclick="sortTable(2)">Research Field</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Japan</td>
+            <td>Kyoto University</td>
+            <td>Biophysics</td>
+        </tr>
+        <tr>
+            <td>Germany</td>
+            <td>Max Planck Institute</td>
+            <td>Biochemistry</td>
+        </tr>
+        <tr>
+            <td>USA</td>
+            <td>MIT</td>
+            <td>Computer Science</td>
+        </tr>
+        <tr>
+            <td>UK</td>
+            <td>Cambridge University</td>
+            <td>Physics</td>
+        </tr>
+        <tr>
+            <td>France</td>
+            <td>Pasteur Institute</td>
+            <td>Microbiology</td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+function sortTable(columnIndex) {
+    const table = document.getElementById("researchTable");
+    let switching = true;
+    let shouldSwitch, i;
+    let rows = table.rows;
+    let switchcount = 0;
+    let direction = "asc";
+
+    while (switching) {
+        switching = false;
+        let rowsArray = Array.from(rows).slice(1);
+
+        for (i = 0; i < rowsArray.length - 1; i++) {
+            shouldSwitch = false;
+            const x = rowsArray[i].getElementsByTagName("TD")[columnIndex];
+            const y = rowsArray[i + 1].getElementsByTagName("TD")[columnIndex];
+
+            if (direction === "asc" && x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                shouldSwitch = true;
+                break;
+            } else if (direction === "desc" && x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                shouldSwitch = true;
+                break;
+            }
+        }
+
+        if (shouldSwitch) {
+            rowsArray[i].parentNode.insertBefore(rowsArray[i + 1], rowsArray[i]);
+            switching = true;
+            switchcount++;
+        } else if (switchcount === 0 && direction === "asc") {
+            direction = "desc";
+            switching = true;
+        }
+    }
+}
+</script>
+
+</body>
+</html>
