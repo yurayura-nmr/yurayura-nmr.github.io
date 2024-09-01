@@ -1,186 +1,190 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YuraYura - Erik's research on protein dynamics</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77a4d1 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        ul {
-            padding: 0;
-            list-style: none;
-        }
-        li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        .content {
-            padding: 20px;
-            background: #fff;
-        }
-        .footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        .map-container {
-            margin-top: 20px;
-        }
-        video {
-            width: 60%;
-            height: auto;            
-            margin: 20px auto; /* Center align video */
-            display: block; /* Ensure block display for margin to work */
-        }
-        .link-center {
-            display: block;
-            text-align: center;
-            color: #003366; /* Marine blue color */
-            text-decoration: none;
-            margin: 10px 0; /* Add some space around the links */
-        }
-        .link-center:hover {
-            color: #003366; /* Keep marine blue color on hover */
-            text-decoration: underline; /* Optionally underline on hover */
-        }
-        img {
-            max-width: 50%;
-            height: auto;
-            margin: 20px auto; /* Center align video */
-            display: block; /* Ensure block display for margin to work */
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YuraYura - Erik's research on protein dynamics</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+header {
+	background: #333;
+	color: #fff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #77a4d1 3px solid;
+}
+header a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+ul {
+	padding: 0;
+	list-style: none;
+}
+li {
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+.content {
+	padding: 20px;
+	background: #fff;
+}
+.footer {
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	margin-top: 20px;
+}
+.map-container {
+	margin-top: 20px;
+}
+video {
+	width: 60%;
+	height: auto;
+	margin: 20px auto; /* Center align video */
+	display: block; /* Ensure block display for margin to work */
+}
+.link-center {
+	display: block;
+	text-align: center;
+	color: #003366; /* Marine blue color */
+	text-decoration: none;
+	margin: 10px 0; /* Add some space around the links */
+}
+.link-center:hover {
+	color: #003366; /* Keep marine blue color on hover */
+	text-decoration: underline; /* Optionally underline on hover */
+}
+img {
+	max-width: 50%;
+	height: auto;
+	margin: 20px auto; /* Center align video */
+	display: block; /* Ensure block display for margin to work */
+}
+a {
+	color: blueviolet;        /* Set the link color to cyan */
+	text-decoration: none; /* Remove the underline from the links */
+}
+/* Hover effect */
+a:hover {
+	color: darkblue;    /* Change the color to dark blue on hover */
+	text-decoration: bold;
+}
+</style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>YuraYura</h1>
-      </div>
+<header>
+  <div class="container">
+    <h1>YuraYura</h1>
+  </div>
 </header>
-    <div class="container">
-        <div class="content">
-            <h2>Konnichi-wa, fellow admirers of protein dynamics!</h2>
-          <p><em>Yuragi</em> is the Japanese word for dynamics. And because the main interest of my unit is to study protein dynamics and their physiological importance, YuraYura became the title of this site. Here, I plan to share recent research news and other material that might be helpful to students and fellow researchers.</p>
-          <h3>So what actually are biomolecular dynamics?</h3>
-          <p>There are many great reviews to answer this question,&nbsp; but let me advertise this one: Lewis Kay and Reid Alderson have recently written a nice review in <a href="https://www.sciencedirect.com/science/article/pii/S0092867420317566">Cell</a> which summarizes our scientific field (what do we mean by biomolecular dynamics?) very nicely. Please check <strong>Fig. 6</strong> of their review for a great visual impact. To avoid stealing their pretty figure, I will just verbally state the main points here:&nbsp;</p>
-<p><strong>Examples of biomolecular dynamics&nbsp;</strong></p>
-<p>1.	Ligand binding (small molecules or macromolecules) <br>
-            2.	Allosteric interactions <br>
-            3.	Determination of molecular structures (proteins, DNA, RNA, etc.) <br>
-            4.	Folding <br>
-            5.	Detection of low-population "minor" (= almost "invisible" states) <br>
-            6.	Mechanisms (e.g. enzymatic reactions, amyloid fibril formation, ...) <br>
-            7.	Dynamic motions (domain motions, local motions, smaller fluctuations, ...; e.g. flip-out of bases of DNA etc.) <br>
-            8.	Biochemistry of unstructured regions: domain linkers and intrinsically disordered proteins <br>
-            9.	Weak, transient, non-specific interactions&nbsp;</p>
-          <p> Also these two points are emphasized. I agree that these 2 points make our field of protein dynamics especially meaningful and thus fulfilling as researchers:&nbsp; <br>
-1.	Molecular sample conditions: near physiological <em>in vitro</em> &nbsp;conditions can be chosen (e.g. pH 7.4, intracellular ionic strength, reducing conditions, temperature or even measurements in living cells)&nbsp; <br>
-2.	We can monitor molecular processes in real time while they take place (over seconds, minutes, hours, days).</p>
-<h3>News</h3>
-            <p><strong>August 24, 2024</strong></p>
-<p>ICMRBS 2024 was held at  Seoul, South Korea. Thanks everyone for the fun! Great discussions in a great country. I am looking foward to visiting again some day.&nbsp; For now, I have to sort out all the great ideas I received there. Thanks to the great feedback, I am highly motivated to finish the current paper.</p>
-<img src="foto/IMG_7084.jpg" alt=""/>
-<p><strong>August 14, 2024</strong><br>
-  Moving away from our old&nbsp; <a href="https://sway.cloud.microsoft/4IqpZkfDIfqc1VNR">Microsoft Sway</a> site and back to a normal HTML website. Rebuilding this slowly over time. Stay tuned!</p>
-<p>&nbsp;</p>
-<!-- Kyoto Google Maps Embed -->
-            <div class="map-container">
-                <h3>Research Interests</h3>
-              <p><strong>Research interest #1: Dynamic ubiquitin</strong></p>
-              <p>Ubiquitin is a small protein, only 76 amino acids long. But it can be linked to another ubiquitin at 8 different points and these ubiquitin "chains" can become quite long and complex. Interestingly, inside cells <strong>different types of chains </strong>often<strong> </strong>have<strong> different meaning</strong> and are interpreted differently by the cellular machinery.&nbsp;</p>
-              <img src="foto/ub1.jpg" alt=""/>
-              <p>For example, a ubiquitin chain linked at residue lysine 48 (("K48-chain") to the C- terminus of the next ubiquitin) signals the cell that the protein connected to this ubiquitin chain should be degraded by the proteasome. Other ubiquitin chains also have different (non- proteolytic) functions. The K48 chain's simplest form: a K48-linked ubiquitin dimer is the most thoroughly studied example. Interestingly, even this simple dimer has intriguing dynamics such as a transition from a closed to an open conformation on solution. Interacting proteins that read out the ubiquitin-encoded signal bind the open form, not the closed one.</p>
-              <img src="foto/ub2.jpg" alt=""/>
-              <p><em>Selected publications</em></p>
-              <p><strong>Dual Function of Phosphoubiquitin in E3 Activation of Parkin. </strong><br>
-Walinda, E., Morimoto, D., Sugase, K., and Shirakawa, M. <br>
-              J Biol Chem, 2016, 291, 16879-16891 <br>
-              doi:10.1074/jbc.M116.728600&nbsp;</p>
-              <p><strong>Structural Dynamic Heterogeneity of Polyubiquitin Subunits Affects Phosphorylation Susceptibility</strong>&nbsp;<br>
-                Morimoto, D. &amp; Walinda, E., Takashima, S., Nishizawa, M., Iwai, K., Shirakawa, M., and Sugase, K.&nbsp;<br>
-                Biochemistry, 2021, 60(8), 573-583&nbsp;<br>
-              doi.org/10.1021/acs.biochem.0c00619</p>
-<p><strong>Solution structure of the HOIL-1L NZF domain reveals a conformational switch regulating linear ubiquitin affinity</strong><br>
-				  Walinda, E., Sugase, K., Ishii N., Shirakawa M., Iwai, K., Morimoto, D.<br>
-				  J Biol Chem, 2023, 299(9), 105165<br>
-			  doi.org/10.1016/j.jbc.2023.105165&nbsp;</p>
-<p>&nbsp;</p>
-<h3>Location of our unit inside of Kyoto University</h3>
-<p> You can find us at E-building, Room 109 on the Campus of the Faculty of Medicine.&nbsp;</p>
-				<p>If you want to stop by to chat, be sure to call us to make sure, someone is there (and not in other labs etc. at that time)! </p>
-				<p> Erik Walinda<br>
-				  606-8501 京都府 京都市左京区吉田近衛町 京都大学大学院 E棟109号室<br>
-				  Kyoto University, Faculty of Medicine E-109, Yoshida Konoecho, Sakyoku, Kyoto, 606-8501, Japan<br>
-				  Telephone: +81-(0)75-753-9299</p>
-			  <p>E-mail: walinda.erik.6e [at] kyoto-u.ac.jp&nbsp;</p>
-				<p>I also have LINE, Kakao, and WeChat.&nbsp; &nbsp; &nbsp; &nbsp;</p>
-			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d816.8414033461593!2d135.7773027250836!3d35.02258231663416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108f6548a47e7%3A0x8e061bfe83b6a2a9!2sFaculty%20of%20Medicine%20Building%20E!5e0!3m2!1sen!2sjp!4v1723694605936!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-
-            <!-- Nearby Locations Google Maps Embeds -->
-          <div class="map-container">
-                <h3>International Access</h3>
-                <h4>Kansai Airport</h4>
-                <p>                    
-                Alternatives: Tokyo-Haneda or Nagoya Airport
-                </p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.2790168962283!2d135.24443641521643!3d34.43251898051123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f1f9b840b4ad%3A0xa9e79f5d561f1361!2sKansai%20International%20Airport!5e0!3m2!1sen!2sjp!4v1625841602340!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                
-            <h4>Kyoto Station</h4>
-                <p>
-                75 Minutes from Kansai Airport using the Express train "Haruka". Haneda airport is also nearer than one might think using the Shinkansen from Shinagawa and the Keikyu line from Haneda to Shinagawa.</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.0092764397454!2d135.75967341521417!3d34.98516758035458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001085d5e4539b5%3A0x3195f19e5e3ef3b9!2sKyoto%20Station!5e0!3m2!1sen!2sjp!4v1625841665146!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                
-                <h4>Subway Station Jingu-Marutamachi</h4>                
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.5469392814152!2d135.77224850000002!3d35.01804480000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108f4a18b6a21%3A0xebf2493369cd7300!2sJingu-Marutamachi%20Station!5e0!3m2!1sen!2sjp!4v1723694830119!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-		  
-		  <h3>Links to collaborating labs and other useful websites</h3>
-		  <p>
-	      Check out the pretty pictures of ubiquitin chains and the recognizing proteins at Dr. Iwai's homepage. Also, Daichi @ Shirakawa-lab does an excellent job at providing updates on our collaborative research progress. </p>
-		  <div>
-		    <p> <a class="link-center" href="http://www.moleng.kyoto-u.ac.jp/~moleng_01/">Shirakawa Laboratory at Kyoto University, Katsura Campus</a> 
-				<a class="link-center" href="http://www.mcp-kyoto-u.jp/">Iwai Laboratory at Kyoto University, Medical Campus</a>
-				<a class="link-center" href="https://www.auditory-neuroscience.uni-goettingen.de/group_Sakata.html">Sakata Laboratory at Goettingen University, Faculty of Medicine</a>		    
-				<a class="link-center" href="https://tenko.kais.kyoto-u.ac.jp/">Kenji's lab at Kyoto University, Faculty of Agriculture</a>				
-			    <a class="link-center" href="https://scholar.google.com/citations?user=lupWx4MAAAAJ&hl=en&oi=ao">Erik Walinda, Publication list on Google Scholar</a>
-		    </p>
-          </div>
-          <h3>Links (coming soon):</h3>
-          <p>* Rigs for MD simulation and other computational fun </p>
-          <p>* Storage</p>
-		  <p><a class="link-center" href="corrigenda.html">Corrigenda</a></p>
-<p>&nbsp;</p>
-      </div>
+<div class="container">
+  <div class="content">
+    <h2>Konnichi-wa, fellow admirers of protein dynamics!</h2>
+    <p><em>Yuragi</em> is the Japanese word for dynamics. And because the main interest of my unit is to study protein dynamics and their physiological importance, YuraYura became the title of this site. Here, I plan to share recent research news and other material that might be helpful to students and fellow researchers.</p>
+    <h3>So what actually are biomolecular dynamics?</h3>
+    <p>There are many great reviews to answer this question,&nbsp; but let me advertise this one: Lewis Kay and Reid Alderson have recently written a nice review in <a href="https://www.sciencedirect.com/science/article/pii/S0092867420317566">Cell</a> which summarizes our scientific field (what do we mean by biomolecular dynamics?) very nicely. Please check <strong>Fig. 6</strong> of their review for a great visual impact. To avoid stealing their pretty figure, I will just verbally state the main points here:&nbsp;</p>
+    <p><strong>Examples of biomolecular dynamics&nbsp;</strong></p>
+    <p>1.	Ligand <strong>binding</strong> (ligands can be both small molecules or macromolecules) <br>
+      2. <strong>Allosteric</strong> interactions <br>
+      3.	Determination of molecular <strong>structures</strong> (proteins, DNA, RNA, etc.) <br>
+      4. <strong>Folding</strong> <br>
+      5.	Detection of low-population "minor" (= almost "<strong>invisible</strong>" <strong>states</strong>) <br>
+      6. <strong>Mechanisms</strong> (e.g. enzymatic reactions, amyloid fibril formation, ...) <br>
+      7.	Dynamic <strong>motions</strong> (domain motions, local motions, smaller fluctuations, ...; e.g. flip-out of bases of DNA etc.) <br>
+      8.	Biochemistry of <strong>unstructured</strong> regions: domain linkers and intrinsically disordered proteins <br>
+      9.	Weak, <strong>transient</strong>, non-specific interactions&nbsp;</p>
+    <p> Also these two points are emphasized. I agree that these 2 points make our field of protein dynamics especially meaningful and thus fulfilling as researchers:&nbsp; <br>
+      1.	Molecular sample conditions: near <strong>physiological</strong> <em>in vitro</em> &nbsp;<strong>conditions</strong> can be chosen (e.g. pH 7.4, intracellular ionic strength, reducing conditions, temperature or even measurements in living cells)&nbsp; <br>
+      2.	We can monitor molecular processes in <strong>real</strong> <strong>time</strong> while they take place (over seconds, minutes, hours, days).</p>
+    <h3>News</h3>
+    <p><strong>August 24, 2024</strong></p>
+    <p>ICMRBS 2024 was held at  Seoul, South Korea. Thanks everyone for the fun! Great discussions in a great country. I am looking foward to visiting again some day.&nbsp; For now, I have to sort out all the great ideas I received there. Thanks to the great feedback, I am highly motivated to finish the current paper.</p>
+    <img src="foto/IMG_7084.jpg" alt="">
+    <p><strong>August 14, 2024</strong><br>
+      Moving away from our old&nbsp; <a href="https://sway.cloud.microsoft/4IqpZkfDIfqc1VNR">Microsoft Sway</a> site and back to a normal HTML website. Rebuilding this slowly over time. Stay tuned!</p>
+    <p><strong>May 15, 2024</strong></p>
+    <p>Congratulations Takeda-san, Iwai-sensei, and everyone involved on an <a href="https://rupress.org/jem/article/221/6/e20231941/276707">exciting paper</a> on an enigmatic attenuation-of-function mutation (R306Q) in human OTULIN!
+      
+      Structurally speaking, it is quite understandable how R306 would partially attenuate OTULIN function. However, only considering the ternary molecular structure of the whole LUBAC complex bound to two monomers of OTULIN enzyme, we can understand how OTULIN R306Q can exert a dominant-negative effect on the function of LUBAC.</p>
+    <p><strong>September 4, 2023</strong></p>
+    <p>Congratulations Tomoki on your <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/pro.4768">nice paper</a> comparing cyclic and conventional K48-linked diubiquitin molecules in various aspects from structural dynamics to function and biophysical behavior.</p>
+    <p><strong>August 18, 2023</strong></p>
+    <p>I am happy to share that our <a href="https://www.jbc.org/article/S0021-9258(23)02193-2/fulltext">paper</a> on conformational dynamics of the HOIL-1L NZF domain has been accepted by the Journal of Biological Chemistry.</p>
+    <p><strong>August 15, 2023</strong></p>
+    <p>Our <a href="https://pubs.acs.org/doi/10.1021/acs.jpcb.3c01683">recent study</a> on how proteins "feel" electric fields in their environment is now available online. Great job also on the pretty cover illustration!&nbsp;&nbsp;</p>
+    <img src="foto/yusuke-coverart.jpg" alt=""/>
+    <div class="map-container">
+      <h3>Research Interests</h3>
+      <p><strong>Research interest #1: Dynamic ubiquitin</strong></p>
+      <p>Ubiquitin is a small protein, only 76 amino acids long. But it can be linked to another ubiquitin at 8 different points and these ubiquitin "chains" can become quite long and complex. Interestingly, inside cells <strong>different types of chains </strong>often<strong> </strong>have<strong> different meaning</strong> and are interpreted differently by the cellular machinery.&nbsp;</p>
+      <img src="foto/ub1.jpg" alt="">
+      <p>For example, a ubiquitin chain linked at residue lysine 48 (("K48-chain") to the C- terminus of the next ubiquitin) signals the cell that the protein connected to this ubiquitin chain should be degraded by the proteasome. Other ubiquitin chains also have different (non- proteolytic) functions. The K48 chain's simplest form: a K48-linked ubiquitin dimer is the most thoroughly studied example. Interestingly, even this simple dimer has intriguing dynamics such as a transition from a closed to an open conformation on solution. Interacting proteins that read out the ubiquitin-encoded signal bind the open form, not the closed one.</p>
+      <img src="foto/ub2.jpg" alt="">
+      <p><em>Selected publications</em></p>
+      <p><strong>Dual Function of Phosphoubiquitin in E3 Activation of Parkin.</strong><br>
+        Walinda, E., Morimoto, D., Sugase, K., and Shirakawa, M. <br>
+        J Biol Chem, 2016, 291, 16879-16891 <br>
+        <a href="https://www.jbc.org/article/S0021-9258(20)35408-9/fulltext">See the full paper</a>&nbsp;</p>
+      <p><strong>Structural Dynamic Heterogeneity of Polyubiquitin Subunits Affects Phosphorylation Susceptibility</strong>&nbsp;<br>
+        Morimoto, D. &amp; Walinda, E., Takashima, S., Nishizawa, M., Iwai, K., Shirakawa, M., and Sugase, K.&nbsp;<br>
+        Biochemistry, 2021, 60(8), 573-583&nbsp;<br>
+        <a href="Structural Dynamic Heterogeneity of Polyubiquitin Subunits Affects Phosphorylation Susceptibility">See the full paper</a></p>
+      <p><strong>Solution structure of the HOIL-1L NZF domain reveals a conformational switch regulating linear ubiquitin affinity</strong><br>
+        Walinda, E., Sugase, K., Ishii N., Shirakawa M., Iwai, K., Morimoto, D.<br>
+        J Biol Chem, 2023, 299(9), 105165<br>
+        <a href="https://www.jbc.org/article/S0021-9258(23)02193-2/fulltext">See the full paper</a></p>
+      <p>&nbsp;</p>
+      <h3>Location of our unit inside of Kyoto University</h3>
+      <p> You can find us at E-building, Room 109 on the Campus of the Faculty of Medicine.&nbsp;</p>
+      <p>If you want to stop by to chat, be sure to call us to make sure, someone is there (and not in other labs etc. at that time)! </p>
+      <p> Erik Walinda<br>
+        606-8501 京都府 京都市左京区吉田近衛町 京都大学大学院 E棟109号室<br>
+        Kyoto University, Faculty of Medicine E-109, Yoshida Konoecho, Sakyoku, Kyoto, 606-8501, Japan<br>
+        Telephone: +81-(0)75-753-9299</p>
+      <p>E-mail: walinda.erik.6e [at] kyoto-u.ac.jp&nbsp;</p>
+      <p>I also have LINE, Kakao, and WeChat.&nbsp; &nbsp; &nbsp; &nbsp;</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d816.8414033461593!2d135.7773027250836!3d35.02258231663416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108f6548a47e7%3A0x8e061bfe83b6a2a9!2sFaculty%20of%20Medicine%20Building%20E!5e0!3m2!1sen!2sjp!4v1723694605936!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <footer class="footer">
-        <p>&copy; 2024 Erik Walinda</p>
-    </footer>    
+    <div class="map-container">
+      <h3>International Access</h3>
+      <h4>Kansai Airport</h4>
+      <p> Alternatives: Tokyo-Haneda or Nagoya Airport </p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.2790168962283!2d135.24443641521643!3d34.43251898051123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f1f9b840b4ad%3A0xa9e79f5d561f1361!2sKansai%20International%20Airport!5e0!3m2!1sen!2sjp!4v1625841602340!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <h4>Kyoto Station</h4>
+      <p> 75 Minutes from Kansai Airport using the Express train "Haruka". Haneda airport is also nearer than one might think using the Shinkansen from Shinagawa and the Keikyu line from Haneda to Shinagawa.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.0092764397454!2d135.75967341521417!3d34.98516758035458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001085d5e4539b5%3A0x3195f19e5e3ef3b9!2sKyoto%20Station!5e0!3m2!1sen!2sjp!4v1625841665146!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <h4>Subway Station Jingu-Marutamachi</h4>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.5469392814152!2d135.77224850000002!3d35.01804480000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108f4a18b6a21%3A0xebf2493369cd7300!2sJingu-Marutamachi%20Station!5e0!3m2!1sen!2sjp!4v1723694830119!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <h3>Links to collaborating labs and other useful websites</h3>
+    <p> Check out the pretty pictures of ubiquitin chains and the recognizing proteins at Dr. Iwai's homepage. Also, Daichi @ Shirakawa-lab does an excellent job at providing updates on our collaborative research progress. </p>
+    <div>
+      <p> <a class="link-center" href="http://www.moleng.kyoto-u.ac.jp/~moleng_01/">Shirakawa Laboratory at Kyoto University, Katsura Campus</a> <a class="link-center" href="http://www.mcp-kyoto-u.jp/">Iwai Laboratory at Kyoto University, Medical Campus</a> <a class="link-center" href="https://www.auditory-neuroscience.uni-goettingen.de/group_Sakata.html">Sakata Laboratory at Goettingen University, Faculty of Medicine</a> <a class="link-center" href="https://tenko.kais.kyoto-u.ac.jp/">Kenji's lab at Kyoto University, Faculty of Agriculture</a> <a class="link-center" href="https://scholar.google.com/citations?user=lupWx4MAAAAJ&hl=en&oi=ao">Erik Walinda, Publication list on Google Scholar</a> </p>
+    </div>
+    <h3>Links (coming soon):</h3>
+    <p>* Rigs for MD simulation and other computational fun </p>
+    <p>* Storage</p>
+    <p><a class="link-center" href="corrigenda.html">Corrigenda</a></p>
+    <p>&nbsp;</p>
+  </div>
+</div>
+<footer class="footer">
+  <p>&copy; 2024 Erik Walinda</p>
+</footer>
 </body>
 </html>
