@@ -63,7 +63,7 @@
 <body>
     <header>
         <div class="container">
-            <h1>Scientific Observations Blog</h1>
+            <h1>Tiny Scientific Observations and Negative Data Blog</h1>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -76,22 +76,35 @@
 
     <div class="container">
         <section class="content">
-            <article>
-                <h2>Observation Title 1</h2>
-                <p><strong>Date:</strong> November 20, 2024</p>
-                <p>This post contains a brief description of a scientific observation or negative result. The goal is to share valuable insights to help other researchers avoid common pitfalls.</p>
-            </article>
+<article>
+    <h2>First Entry: GST Removal at Low pH</h2>
+    <p><strong>Date:</strong> November 20, 2024</p>
+    <p>Welcome to my first entry! Here, I plan to share small observations that are too tiny for traditional journal publications but might still prove useful to others. These posts are AI-generated but based on my actual experimental notes, and I make sure to thoroughly check everything. Let's dive into the first story:</p>
 
-            <article>
-                <h2>Observation Title 2</h2>
-                <p><strong>Date:</strong> November 15, 2024</p>
-                <p>Details about another observation, including the setup, results, and why it is important to share this data, even though it didn’t yield publishable results.</p>
-            </article>
+    <p>Yesterday, I encountered an interesting challenge while removing GST from a solution buffered at pH 4.5 (sodium acetate buffer). Cytiva/GE advertises their resin as being compatible with low pH conditions, meaning the resin won't degrade. However, I wasn't sure if the GST-GSH interaction would remain intact at such a low pH, allowing me to effectively trap and remove GST from my sample.</p>
+
+    <p>To investigate, I started by looking into the pKa values of glutathione (GSH). GSH has four pKa values, and none are near pH 4.5. Here's what I found:</p>
+    <ul>
+        <li>pK1: 2.12</li>
+        <li>pK2: 3.53</li>
+        <li>pK3: 8.66</li>
+        <li>pK4: 9.12 (at 25°C)</li>
+    </ul>
+    <p>You can see the pKa values for yourself <a href="https://www.chemicalbook.com/ChemicalProductProperty_JP_CB6320803.htm" target="_blank">here</a>. Based on these values, GSH behaves similarly at pH 7 and pH 4.5.</p>
+
+    <p>To be thorough, I also examined the molecular structure and its interaction with GST. You can find a detailed view of the GSH-GST complex <a href="https://www.rcsb.org/3d-view/1PKW" target="_blank">here</a> (zoom in on the glutathione molecule).</p>
+
+    <p>Despite these findings, I had my doubts. I even asked ChatGPT, which was skeptical about whether the hydrogen bonding and other interactions would hold at pH 4.5. But the pKa values gave me enough confidence to proceed with the experiment.</p>
+
+    <p>The result? Success! The GSH resin trapped GST proteins perfectly, even at pH 4.5, and I could successfully proceed with my GST-free protein. A small win, but one worth sharing. Hopefully, this observation helps others considering similar experiments. Enjoy!</p>
+</article>
+
+
         </section>
     </div>
 
     <footer class="footer">
-        <p>© 2024 Your Name. Sharing for better science.</p>
+        <p>© 2024 Erik Walinda. Sharing for better science.</p>
     </footer>
 </body>
 </html>
