@@ -1,1 +1,2 @@
-Sitemap: https://yurayura-nmr.github.io/sitemap.xml
+# robots.txt file of https://yurayura-nmr.github.io/
+sitemap: https://yurayura-nmr.github.io/sitemap.txt
