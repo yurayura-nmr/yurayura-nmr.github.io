@@ -41,7 +41,7 @@
         }
 
         li {
-            display: inline;
+            display: block;
             padding: 0 20px 0 20px;
         }
 
@@ -93,15 +93,16 @@
                 <p>Last week in the lab, we faced a familiar problem: a protein requiring 4 hours of expression at 37°C,
                     but the OD<sub>600</sub> only reached the induction target level of 0.8 late in the afternoon and
                     overall growth was very slow in M9 media. It was Friday, and none of us wanted to stay in the lab
-                    until midnight. So, we tried something unconventional.</p>
+                    until midnight. So, we tried something unconventional (to keep growth intentionally slow while still
+                    allowing expression of our protein).</p>
 
                 <p>Instead of waiting, we made the following adjustments:</p>
-                <ol>
-                    <li>Lowered the induction OD<sub>600</sub> from 0.6 to 0.5.</li>
+                <ul>
+                    <li>Lowered the induction OD<sub>600</sub> from 0.8 to 0.5.</li>
                     <li>Reduced IPTG concentration from 1 mM to 0.1 mM.</li>
                     <li>Switched the temperature from 37°C to 16°C.</li>
                     <li>Allowed expression to run over the entire weekend (Friday 5 PM to Monday 10 AM).</li>
-                </ol>
+                </ul>
 
                 <p>On Monday morning, we were surprised to find the protein had expressed successfully! No visible
                     autolysis, no unpleasant odors (which often signal cell death), and the supernatant of the collected
