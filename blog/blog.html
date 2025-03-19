@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +13,13 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
+
         header {
             background: #333;
             color: #fff;
@@ -24,25 +27,30 @@
             min-height: 70px;
             border-bottom: #77a4d1 3px solid;
         }
+
         header a {
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 16px;
         }
+
         ul {
             padding: 0;
             list-style: none;
         }
+
         li {
             display: inline;
             padding: 0 20px 0 20px;
         }
+
         .content {
             padding: 20px;
             background: #fff;
             margin: 20px 0;
         }
+
         .footer {
             background: #333;
             color: #fff;
@@ -50,16 +58,19 @@
             padding: 10px;
             margin-top: 20px;
         }
+
         a {
             color: blueviolet;
             text-decoration: none;
         }
+
         a:hover {
             color: darkblue;
             text-decoration: bold;
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -76,28 +87,62 @@
 
     <div class="container">
         <section class="content">
-<article>
-    <h2>First Entry: GST Removal at Low pH</h2>
-    <p><strong>Date:</strong> November 20, 2024</p>
-    <p>Welcome to my first entry! Here, I plan to share small observations that are too tiny for traditional journal publications but might still prove useful to others. These posts are AI-generated but based on my actual experimental notes, and I make sure to thoroughly check everything. Let's dive into the first story:</p>
+            <article>
+                <h2>Weekend Protein Expression: A Surprising Success</h2>
+                <p><strong>Date:</strong> March 19, 2025</p>
+                <p>Last week in the lab, we faced a familiar problem: a protein requiring 4 hours of expression at 37°C, but the OD<sub>600</sub> only reached the induction target level of 0.8 late in the afternoon and overall growth was very slow in M9 media. It was Friday, and none of us wanted to stay in the lab until midnight. So, we tried something unconventional.</p>
+                
+                <p>Instead of waiting, we made the following adjustments:</p>
+                <ul>
+                    <li>Lowered the induction OD<sub>600</sub> from 0.6 to 0.5.</li>
+                    <li>Reduced IPTG concentration from 1 mM to 0.1 mM.</li>
+                    <li>Switched the temperature from 37°C to 16°C.</li>
+                    <li>Allowed expression to run over the entire weekend (Friday 5 PM to Monday 10 AM).</li>
+                </ul>
+                
+                <p>On Monday morning, we were surprised to find the protein had expressed successfully! No visible autolysis, no unpleasant odors (which often signal cell death), and the supernatant of the collected pellets remained clear.</p>
+                
+                <p>So, while not a huge observation, it makes life easier - this could be a game-changer for weekend expression without needing to return on Saturday. If you're in a similar situation, give it a try!</p>
+            </article>
+            
+            <article>
+                <h2>First Entry: GST Removal at Low pH</h2>
+                <p><strong>Date:</strong> November 20, 2024</p>
+                <p>Welcome to my first entry! Here, I plan to share small observations that are too tiny for traditional
+                    journal publications but might still prove useful to others. These posts are AI-generated but based
+                    on my actual experimental notes, and I make sure to thoroughly check everything. Let's dive into the
+                    first story:</p>
 
-    <p>Yesterday, I encountered an interesting challenge while removing GST from a solution buffered at pH 4.5 (sodium acetate buffer). Cytiva/GE advertises their resin as being compatible with low pH conditions, meaning the resin won't degrade. However, I wasn't sure if the GST-GSH interaction would remain intact at such a low pH, allowing me to effectively trap and remove GST from my sample.</p>
+                <p>Yesterday, I encountered an interesting challenge while removing GST from a solution buffered at pH
+                    4.5 (sodium acetate buffer). Cytiva/GE advertises their resin as being compatible with low pH
+                    conditions, meaning the resin won't degrade. However, I wasn't sure if the GST-GSH interaction would
+                    remain intact at such a low pH, allowing me to effectively trap and remove GST from my sample.</p>
 
-    <p>To investigate, I started by looking into the pKa values of glutathione (GSH). GSH has four pKa values, and none are near pH 4.5. Here's what I found:</p>
-    <ul>
-        <li>pK1: 2.12</li>
-        <li>pK2: 3.53</li>
-        <li>pK3: 8.66</li>
-        <li>pK4: 9.12 (at 25°C)</li>
-    </ul>
-    <p>You can see the pKa values for yourself <a href="https://www.chemicalbook.com/ChemicalProductProperty_JP_CB6320803.htm" target="_blank">here</a>. Based on these values, GSH behaves similarly at pH 7 and pH 4.5.</p>
+                <p>To investigate, I started by looking into the pKa values of glutathione (GSH). GSH has four pKa
+                    values, and none are near pH 4.5. Here's what I found:</p>
+                <ul>
+                    <li>pK1: 2.12</li>
+                    <li>pK2: 3.53</li>
+                    <li>pK3: 8.66</li>
+                    <li>pK4: 9.12 (at 25°C)</li>
+                </ul>
+                <p>You can see the pKa values for yourself <a
+                        href="https://www.chemicalbook.com/ChemicalProductProperty_JP_CB6320803.htm"
+                        target="_blank">here</a>. Based on these values, GSH behaves similarly at pH 7 and pH 4.5.</p>
 
-    <p>To be thorough, I also examined the molecular structure and its interaction with GST. You can find a detailed view of the GSH-GST complex <a href="https://www.rcsb.org/3d-view/1PKW" target="_blank">here</a> (zoom in on the glutathione molecule).</p>
+                <p>To be thorough, I also examined the molecular structure and its interaction with GST. You can find a
+                    detailed view of the GSH-GST complex <a href="https://www.rcsb.org/3d-view/1PKW"
+                        target="_blank">here</a> (zoom in on the glutathione molecule).</p>
 
-    <p>Despite these findings, I had my doubts. I even asked ChatGPT, which was skeptical about whether the hydrogen bonding and other interactions would hold at pH 4.5. But the pKa values gave me enough confidence to proceed with the experiment.</p>
+                <p>Despite these findings, I had my doubts. I even asked ChatGPT, which was skeptical about whether the
+                    hydrogen bonding and other interactions would hold at pH 4.5. But the pKa values gave me enough
+                    confidence to proceed with the experiment.</p>
 
-    <p>The result? Success! The GSH resin trapped GST proteins perfectly, even at pH 4.5 (even though the GST formed white turbid aggregates in the solution!), and I could successfully proceed with my GST-free protein. A small win, but one worth sharing. Hopefully, this observation helps others considering similar experiments. Enjoy!</p>
-</article>
+                <p>The result? Success! The GSH resin trapped GST proteins perfectly, even at pH 4.5 (even though the
+                    GST formed white turbid aggregates in the solution!), and I could successfully proceed with my
+                    GST-free protein. A small win, but one worth sharing. Hopefully, this observation helps others
+                    considering similar experiments. Enjoy!</p>
+            </article>
 
 
         </section>
@@ -107,4 +152,5 @@
         <p>© 2024 Erik Walinda, Kyoto University. Sharing for better science.</p>
     </footer>
 </body>
+
 </html>
