@@ -45,6 +45,8 @@ The translation is organized by section, mirroring the structure of the original
 └── translations/
     └── 1.md  # Forewords & Copyright Info
     └── 2.md  # (To be translated...)
+    └── 38.md  # Bruce's class
+    
 ```
 
 ## 🔗 Links
