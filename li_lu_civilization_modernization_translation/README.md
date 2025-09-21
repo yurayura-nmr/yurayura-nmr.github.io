@@ -45,7 +45,7 @@ The translation is organized by section, mirroring the structure of the original
 ## 🔗 Links
 
 *   [Original Book on Amazon China](https://www.amazon.com/Civilized-modern-value-investing-Chinese/dp/7521712595) (Purchase to support the author)
-*   [Li Lu on Wikipedia](https://en.wikipedia.org/wiki/Li_Lu_(investor))
+*   [Li Lu on Wikipedia](https://en.wikipedia.org/wiki/Li_Lu))
 
 ## 📄 License for Translation
 
