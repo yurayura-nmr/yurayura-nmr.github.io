@@ -13,6 +13,11 @@ key figure in the value investing community.
 Widely respected in financial circles, Li Lu is often cited as a successor to Warren Buffett 
 and Charlie Munger, the latter of whom has provided a glowing foreword for this work.
 
+Parts of the book already published elsewhere: 
+
+* [Talk at Greenwald's class](https://www.youtube.com/watch?v=-jF5au0-JiY)
+* [The practice of value investing](https://www.longriverinv.com/thought/the-practice-of-value-investing-by-li-lu)
+
 ## 🚧 About This Project
 
 This is an **unofficial, in-progress translation** created by a reader. 
