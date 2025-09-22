@@ -1,6 +1,6 @@
 # English Translation: Civilization, Modernization, Value Investing, and China by Li Lu
 
-**中文书名 (Chinese Title):** 《文明、现代化、价值投资与中国》 (Wénmíng, Xiàndàihuà, Jiàzhí Tóuzī yǔ Zhōngguó)
+《文明、现代化、价值投资与中国》 (Wénmíng, Xiàndàihuà, Jiàzhí Tóuzī yǔ Zhōngguó)
 
 An unofficial English translation of the influential book by Li Lu (李录).
 
