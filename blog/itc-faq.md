@@ -39,3 +39,46 @@ This correction is implemented automatically in MicroCal’s data analysis softw
 
 ***
 
+Here is an ITC reference breakdown suitable for GitHub, using clear variable names and explanations for equations 1–9 as shown in the MicroCal ITC manual, Appendix A. This covers bulk concentration corrections as well as binding equations for a single set of identical sites.
+
+***
+
+## ITC Data Analysis: Concentration and Binding Equations ([MicroCal ITC Manual, Appendix A])[1][2]
+
+### 1. **Volume Displacement & Cell Concentration Correction**
+
+Whenever volume ($$ \Delta V $$) is injected, solution in the cell’s active volume ($$ V_0 $$) is partially displaced into the inactive tube. As a result, both macromolecule (“M”, typically protein) and ligand (“X”) concentrations in the active cell change. These corrections are built into Origin/PEAQ-ITC and should be accounted for in all manual analyses or custom fits.
+
+#### **Macromolecule Correction**
+
+- Originally: $$ M_0 $$ in $$ V_0 $$
+- After injection: $$ M_t $$ in $$ V_0 $$, some protein displaced
+
+**Mass conservation:**
+$$
+M_0 V_0 = M_t V_0 + \frac{1}{2}(M_t + M_0)\Delta V  \tag{1}
+$$
+
+**Solving for $$ M_t $$:**
+$$
+M_t = M_0 \frac{2V_0}{2V_0 + \Delta V} \tag{2}
+$$
+
+#### **Ligand Correction**
+
+- Hypothetical: $$ X_0 $$ is the concentration if all injected ligand stayed in $$ V_0 $$
+- Actual: $$ X_t $$ is the true ligand concentration in $$ V_0 $$
+
+**Mass conservation:**
+$$
+X_0 V_0 = X_t V_0 + \frac{1}{2} X_t \Delta V \tag{3}
+$$
+
+**Solving for $$ X_t $$:**
+$$
+X_t = X_0 \frac{2V_0}{2V_0 + \Delta V} \tag{4}
+$$
+
+*(The structure is identical to the macromolecule correction—after any injection, bulk concentrations are scaled down by a factor accounting for dilutive loss.)*
+
+***
