@@ -75,3 +75,20 @@ Where:
 4. Adjust n, K, and dH iteratively using minimization (e.g., Marquardt-Levenberg) until there is no further significant improvement in fit.
 
 ***
+
+| Parameter        | Meaning / Role                                           | Typical Usage Context                     | Notes / Interpretation                                                  |
+|------------------|---------------------------------------------------------|-------------------------------------------|-------------------------------------------------------------------------|
+| **n (small n)**  | Number of binding sites per macromolecule                | Classical ITC equations and theory        | True molecular binding sites; may reflect active fraction if < 1       |
+| **N (capital N)**| Binding stoichiometry or effective molar ratio          | Origin and many fitting software outputs  | Includes effects of concentration errors and active/inactive species; often fit parameter rather than fixed value |
+| **inc.B** (incompetent fraction B) | Fraction of ligand or macromolecule that is inactive or incapable of binding | SEDPHAT-GUSSI global analysis framework  | Explicit modeling of inactive fractions; constrained between 0 and 1; used in concentration corrections and global fitting |
+
+***
+
+### Additional Notes:
+
+- **n** is the theoretical or actual number of ligand binding sites on a single macromolecule molecule.
+- **N** in software like Origin often reflects *effective* stoichiometry, combining true site number with sample activity and concentration accuracy.
+- **inc.B** or incompetent fractions represent species in the sample that do not participate in binding (e.g., misfolded protein, degraded ligand), improving fit quality and realism in global analyses.
+- When interpreting ITC data, distinguish clearly whether stoichiometry refers to true molecular sites, effective stoichiometry in fits, or explicit inactive fractions.
+
+***
